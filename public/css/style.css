@@ -1,0 +1,228 @@
+body * {
+    margin: 0;
+    padding: 0;
+}
+
+body *::selection {
+    background: #2C3E50;
+    color: #ECF0F1;
+}
+
+.normal_paragraph {
+    margin-bottom: 5px;
+}
+
+body {
+    margin-left: 20vw;
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Inconsolata', 'Helvetica', sans-serif;
+    width: calc(80vw - 20px);
+    max-width: 760px;
+    color: #2C3E50;
+}
+
+
+@media (max-width: 400px) {
+    body {
+        width: auto;
+        margin: 10px;
+    }
+}
+
+#errorMessage {
+    background-color: #E74C3C;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 200px;
+}
+
+@media (max-width: 400px) {
+    #errorMessage {
+        position: static;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+.messagesList {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    -moz-animation-name: fadeInOnLoad;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-funtion: ease-in;
+    -moz-animation-duration: 0.3s;
+
+    -webkit-animation-name: fadeInOnLoad;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-duration: 0.3s;
+
+    animation-name: fadeInOnLoad;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.3s;
+
+    box-sizing: border-box;
+    height: 420px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+
+.messageTime {
+    margin-right: 5px;
+    color: #888;
+}
+
+.message {
+}
+
+@-moz-keyframes fadeInOnLoad {
+    0% {
+        opacity: 0;
+    }
+    100% {
+    	opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInOnLoad {
+    0% {
+        opacity: 0;
+    }
+    100% {
+    	opacity: 1;
+    }
+}
+
+@keyframes fadeInOnLoad {
+    0% {
+        opacity: 0;
+    }
+    100% {
+    	opacity: 1;
+    }
+}
+
+input {
+    box-sizing: border-box;
+    background-color: inherit;
+    border: none;
+    padding: 10px;
+    margin: 10px 0 10px 0;
+    font-family: inherit;
+    font-size: 1rem;
+    -webkit-transition: background-color .15s ease-out;
+       -moz-transition: background-color .15s ease-out;
+         -o-transition: background-color .15s ease-out;
+            transition: background-color .15s ease-out;
+    background-color: #eee;
+}
+
+.input_field {
+    display: inline-block;
+    width: 60%;
+    color: #555;
+}
+
+.input_field:focus {
+    background-color: #2C3E50;
+    outline: none;
+    color: #ECF0F1;
+}
+
+.chat_input_field {
+    width: 100%;
+}
+
+.short_input_field {
+    max-width: 200px;
+}
+
+.input_submit {
+    padding: 10px 20px 10px 20px;
+    border-radius: 2px;
+}
+
+@media (max-width: 400px) {
+    input {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .input_field {
+        width: 100%;
+        max-width: 100%;
+    }
+    .input_submit {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .short_input_field {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .input_submit {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+label {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+div.chatApp div.chatRoomList {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+    height: 500px;
+    border: solid;
+    border-width: 1px;
+    border-color: #C0C0C0;
+}
+
+div.chatRoomList ul li.room {
+    padding: 20px;
+    font-family: 'lucida grande',tahoma,verdana,arial,sans-serif;
+    font-size: 17px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    border-bottom: solid #DCDCDC;
+    border-width: 1px;
+}
+
+div.chatRoomList ul li:hover
+{
+    background-color:#FDFCFC;
+}
+
+
+div.chatApp div.messageList {
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 500px;
+    border-style: solid solid solid none;
+    border-width: 1px;
+    border-color: #C0C0C0;
+}
+
+div.modal-body select.form-control, div.modal-body input.form-control {
+    width: 100%;
+    margin-bottom: 10px;
+}

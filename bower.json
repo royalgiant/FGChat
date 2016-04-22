@@ -1,0 +1,20 @@
+{
+  "name": "flashglotchat-react",
+  "main": "index.js",
+  "version": "0.0.1",
+  "authors": [
+    "donald"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2"
+  }
+}
